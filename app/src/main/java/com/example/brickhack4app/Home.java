@@ -29,7 +29,6 @@ public class Home extends ListActivity {
                     intent = new Intent(getBaseContext(), Stretches.class);
                 if(sText.equals("White Belt"))
                     intent = new Intent(getBaseContext(), WhiteBelt.class);
-                /*
                 if(sText.equals("Yellow Belt"))
                     intent = new Intent(getBaseContext(), YellowBelt.class);
                 if(sText.equals("Orange Belt"))
@@ -42,7 +41,6 @@ public class Home extends ListActivity {
                     intent = new Intent(getBaseContext(), BrownBelt.class);
                 if(sText.equals("Black Belt"))
                     intent = new Intent(getBaseContext(), BlackBelt.class);
-                    */
                 if(intent != null){
                     startActivity(intent);
                 }

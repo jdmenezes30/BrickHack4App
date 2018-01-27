@@ -19,6 +19,18 @@
         </activity>
         <activity android:name=".WhiteBelt" android:label="WhiteBeltLabel">
         </activity>
+        <activity android:name=".YellowBelt" android:label="YellowBeltLabel">
+        </activity>
+        <activity android:name=".OrangeBelt" android:label="OrangeBeltLabel">
+        </activity>
+        <activity android:name=".GreenBelt" android:label="GreenBeltLabel">
+        </activity>
+        <activity android:name=".BlueBelt" android:label="BlueBeltLabel">
+        </activity>
+        <activity android:name=".BrownBelt" android:label="BrownBeltLabel">
+        </activity>
+        <activity android:name=".BlackBelt" android:label="BackBeltLabel">
+        </activity>
     </application>
 
 </manifest>
