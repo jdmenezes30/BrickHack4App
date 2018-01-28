@@ -28,8 +28,19 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TextView textElement = (TextView) findViewById(R.id.appDescription);
-        textElement.setText(getIntent().getStringExtra("Welcome to the Judo App! This app conveniently locates names, descriptions and videos of different techniques needed to be promoted to different Judo ranks."));
+        Fragment fragment = null;
+        Class fragmentClass;
+        fragmentClass = Home.class;
+        try {
+            fragment = (Fragment) fragmentClass.newInstance();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.flContent, fragment).commit();
+
+        setTitle("Home");
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -56,6 +67,9 @@ public class Main extends AppCompatActivity {
         Fragment fragment = null;
         Class fragmentClass;
         switch(menuItem.getItemId()) {
+            case R.id.nav_stretches:
+                fragmentClass = Stretches.class;
+                break;
             case R.id.nav_white_belt:
                 fragmentClass = WhiteBelt.class;
                 break;
