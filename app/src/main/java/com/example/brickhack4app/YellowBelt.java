@@ -32,7 +32,7 @@ public class YellowBelt extends ListFragment{
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-        String[] techniques = {"O uchi gari","Ko uchi gari", "Ko uchi makikomi", "Seoi otoshi", "De ashi barai", "Tani otoshi"};
+        String[] techniques = {"O uchi gari","Ko uchi gari", "Ko uchi makikomi", "Seoi otoshi", "De ashi harai", "Tani otoshi"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, techniques);
         getListView().setAdapter(adapter);
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {

@@ -7,5 +7,6 @@
     <string name="seek_to_hint">Seconds</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-    <string name="appDescription">App Description</string>
+    <string name="home_text">App Description</string>
+    <string name="home_text2">App Description2</string>
 </resources>

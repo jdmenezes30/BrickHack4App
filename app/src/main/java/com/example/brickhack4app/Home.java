@@ -34,7 +34,10 @@ public class Home extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
 
         TextView textElement = (TextView) getActivity().findViewById(R.id.home_text);
-        textElement.setText("Welcome to the Judo App! This app conveniently locates names, descriptions and videos of different techniques needed to be promoted to different Judo ranks.");
+        textElement.setText("Welcome to the Judo App!");
+
+        TextView textElement2 = (TextView) getActivity().findViewById(R.id.home_text2);
+        textElement2.setText("This app conveniently gathers the names, descriptions and videos of techniques needed to be promoted to different Judo ranks as well as other useful exercises!");
 
         Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
         toolbar.setBackgroundColor(Color.parseColor("#808080"));

@@ -67,6 +67,9 @@ public class Main extends AppCompatActivity {
         Fragment fragment = null;
         Class fragmentClass;
         switch(menuItem.getItemId()) {
+            case R.id.nav_home:
+                fragmentClass = Home.class;
+                break;
             case R.id.nav_stretches:
                 fragmentClass = Stretches.class;
                 break;
