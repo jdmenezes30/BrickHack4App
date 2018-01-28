@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_white_belt"
+            android:title="White Belt"
+            android:checked="true" />
+        <item
+            android:id="@+id/nav_yellow_belt"
+            android:title="Yellow Belt"
+            android:checked="false" />
+        <item
+            android:id="@+id/nav_orange_belt"
+            android:title="Orange Belt"
+            android:checked="false" />
+        <item
+            android:id="@+id/nav_green_belt"
+            android:title="Green Belt"
+            android:checked="false" />
+        <item
+            android:id="@+id/nav_blue_belt"
+            android:title="Blue Belt"
+            android:checked="false" />
+        <item
+            android:id="@+id/nav_brown_belt"
+            android:title="Brown Belt"
+            android:checked="false" />
+        <item
+            android:id="@+id/nav_black_belt"
+            android:title="Black Belt"
+            android:checked="false" />
+    </group>
+</menu>
