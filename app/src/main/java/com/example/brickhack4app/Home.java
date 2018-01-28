@@ -30,7 +30,7 @@ public class Home extends AppCompatActivity {
 
         Log.i("bleh",judoLV.toString());
 
-        String[] Subjects = {"Stretches","White Belt", "Yellow Belt", "Orange Belt", "Green Belt", "Blue Belt", "Brown Belt", "Black Belt"};
+        String[] Subjects = {"White Belt", "Yellow Belt", "Orange Belt", "Green Belt", "Blue Belt", "Brown Belt", "Black Belt"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(judoLV.getContext(), android.R.layout.simple_list_item_1, Subjects);
         judoLV.setAdapter(adapter);
         judoLV.setOnItemClickListener(new AdapterView.OnItemClickListener(){

@@ -8,4 +8,13 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:text="@string/techniqueName" />
+    <TextView
+        android:id="@+id/techniqueDescription"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="@string/techniqueDescription" />
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
