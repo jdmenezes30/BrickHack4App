@@ -81,6 +81,8 @@ public class YellowBelt extends ListFragment{
              }
          }
         );
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(Color.parseColor("#f7ef14"));
         super.onActivityCreated(savedInstanceState);
     }
 }

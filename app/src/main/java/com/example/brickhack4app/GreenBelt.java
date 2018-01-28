@@ -81,6 +81,8 @@ public class GreenBelt extends ListFragment {
              }
          }
         );
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(Color.parseColor("#008000"));
         super.onActivityCreated(savedInstanceState);
     }
 }

@@ -81,6 +81,8 @@ public class BlackBelt extends ListFragment{
              }
          }
         );
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(Color.parseColor("#808080"));
         super.onActivityCreated(savedInstanceState);
     }
 }

@@ -1,8 +1,10 @@
 package com.example.brickhack4app;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -79,6 +81,8 @@ public class WhiteBelt extends ListFragment{
              }
          }
         );
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(Color.parseColor("#808080"));
         super.onActivityCreated(savedInstanceState);
     }
 }

@@ -4,15 +4,23 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <TextView
+        android:textSize="32sp"
+        android:gravity="center"
         android:id="@+id/techniqueName"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/techniqueName" />
+        android:layout_width="fill_parent"
+        android:text="@string/techniqueName"
+        android:textColor="#000"/>
     <TextView
         android:id="@+id/techniqueDescription"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="@string/techniqueDescription" />
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="fill_parent"
+        android:text="@string/techniqueDescription"
+        android:layout_marginBottom="60dp"
+        android:textColor="#000"/>
+
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/youtube_view"
         android:layout_width="match_parent"

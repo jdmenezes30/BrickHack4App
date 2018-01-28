@@ -87,6 +87,8 @@ public class BlueBelt extends ListFragment{
              }
          }
         );
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(Color.parseColor("blue"));
         super.onActivityCreated(savedInstanceState);
     }
 }

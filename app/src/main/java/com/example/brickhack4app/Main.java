@@ -71,7 +71,7 @@ public class Main extends AppCompatActivity {
                 fragmentClass = BrownBelt.class;
                 break;
             case R.id.nav_black_belt:
-                fragmentClass = BlueBelt.class;
+                fragmentClass = BlackBelt.class;
                 break;
             default:
                 fragmentClass = WhiteBelt.class;

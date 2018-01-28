@@ -81,6 +81,8 @@ public class OrangeBelt extends ListFragment{
              }
          }
         );
+        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
+        toolbar.setBackgroundColor(Color.parseColor("#ffa500"));
         super.onActivityCreated(savedInstanceState);
     }
 }
