@@ -44,43 +44,43 @@ public class BlueBelt extends ListFragment{
                      case "Uchi mata":
                          intent.putExtra("vURL", "7qeKv_dpLlw");
                          intent.putExtra("text1", "Uchi mata");
-                         intent.putExtra("text2", "Major or large outer reap");
+                         intent.putExtra("text2", "Inner-thigh reaping throw");
                          startActivity(intent);
                          break;
                      case "Soto makikomi":
                          intent.putExtra("vURL", "qXTdAEpwubw");
                          intent.putExtra("text1", "Soto makikomi");
-                         intent.putExtra("text2", "Major or large outer reap");
+                         intent.putExtra("text2", "Outer wraparound throw");
                          startActivity(intent);
                          break;
                      case "Hane goshi":
                          intent.putExtra("vURL", "sUvXz4BGD0k");
                          intent.putExtra("text1", "Hane goshi");
-                         intent.putExtra("text2", "Hip wheel throw");
+                         intent.putExtra("text2", "Hip spring");
                          startActivity(intent);
                          break;
                      case "Yama arashi":
                          intent.putExtra("vURL", "fM2Kjq4Ec2c");
                          intent.putExtra("text1", "Yama arashi");
-                         intent.putExtra("text2", "Major or large hip throw");
+                         intent.putExtra("text2", "Mountain storm");
                          startActivity(intent);
                          break;
                      case "Tsuri komi goshi":
                          intent.putExtra("vURL", "1eir0M1N40Q");
                          intent.putExtra("text1", "Tsuri komi goshi");
-                         intent.putExtra("text2", "One arm shoulder throw");
+                         intent.putExtra("text2", "Lift-pull hip throw");
                          startActivity(intent);
                          break;
                      case "Uchi makikomi":
                          intent.putExtra("vURL", "y1DBRwZrXtg");
                          intent.putExtra("text1", "Uchi makikomi");
-                         intent.putExtra("text2", "Kneeling shoulder drop");
+                         intent.putExtra("text2", "Inner wraparoung throw");
                          startActivity(intent);
                          break;
                      case "O soto guruma":
                          intent.putExtra("vURL", "2zAr2dcRKhY");
                          intent.putExtra("text1", "O soto guruma");
-                         intent.putExtra("text2", "Kneeling shoulder drop");
+                         intent.putExtra("text2", "Large outer wheel");
                          startActivity(intent);
                          break;
                  }

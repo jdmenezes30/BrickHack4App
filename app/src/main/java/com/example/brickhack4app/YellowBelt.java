@@ -44,37 +44,37 @@ public class YellowBelt extends ListFragment{
                      case "O uchi gari":
                          intent.putExtra("vURL", "MuLDvLFQTHs");
                          intent.putExtra("text1", "O uchi gari");
-                         intent.putExtra("text2", "Major or large outer reap");
+                         intent.putExtra("text2", "Large inner reap");
                          startActivity(intent);
                          break;
                      case "Ko uchi gari":
                          intent.putExtra("vURL", "cwlmv52ccVQ");
                          intent.putExtra("text1", "Ko uchi gari");
-                         intent.putExtra("text2", "Major or large outer reap");
+                         intent.putExtra("text2", "Small inner reap");
                          startActivity(intent);
                          break;
                      case "Ko uchi makikomi":
                          intent.putExtra("vURL", "2Sj6i-ivpR4");
                          intent.putExtra("text1", "Ko uchi makikomi");
-                         intent.putExtra("text2", "Hip wheel throw");
+                         intent.putExtra("text2", "Small inner wraparound throw");
                          startActivity(intent);
                          break;
                      case "Seoi otoshi":
                          intent.putExtra("vURL", "cS_XrgE0hNE");
                          intent.putExtra("text1", "Seoi otoshi");
-                         intent.putExtra("text2", "Major or large hip throw");
+                         intent.putExtra("text2", "Shoulder drop");
                          startActivity(intent);
                          break;
                      case "De ashi harai":
                          intent.putExtra("vURL", "fcSMGRq0HMY");
                          intent.putExtra("text1", "De ashi harai");
-                         intent.putExtra("text2", "One arm shoulder throw");
+                         intent.putExtra("text2", "Forward foot sweep");
                          startActivity(intent);
                          break;
                      case "Tani otoshi":
                          intent.putExtra("vURL", "G3PHJdyjz8o");
                          intent.putExtra("text1", "Tani otoshi");
-                         intent.putExtra("text2", "Kneeling shoulder drop");
+                         intent.putExtra("text2", "Valley drop");
                          startActivity(intent);
                          break;
                  }

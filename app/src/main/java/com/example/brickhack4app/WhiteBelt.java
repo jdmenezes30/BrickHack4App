@@ -42,31 +42,31 @@ public class WhiteBelt extends ListFragment{
                      case "O soto gake":
                          intent.putExtra("vURL", "OM11NEW1f3g");
                          intent.putExtra("text1", "O soto gake");
-                         intent.putExtra("text2", "Major or large outer reap");
+                         intent.putExtra("text2", "Large outer hook");
                          startActivity(intent);
                          break;
                      case "O soto gari":
                          intent.putExtra("vURL", "Cik-jXhmsoE");
                          intent.putExtra("text1", "O soto gari");
-                         intent.putExtra("text2", "Major or large outer reap");
+                         intent.putExtra("text2", "Large outer reap");
                          startActivity(intent);
                          break;
                      case "Koshi guruma":
                          intent.putExtra("vURL", "pJsQrgMhgk4");
                          intent.putExtra("text1", "Koshi guruma");
-                         intent.putExtra("text2", "Hip wheel throw");
+                         intent.putExtra("text2", "Hip wheel");
                          startActivity(intent);
                          break;
                      case "O goshi":
                          intent.putExtra("vURL", "PFbILGwd5L4");
                          intent.putExtra("text1", "O goshi");
-                         intent.putExtra("text2", "Major or large hip throw");
+                         intent.putExtra("text2", "Large hip throw");
                          startActivity(intent);
                          break;
                      case "Ippon seoi nage":
                          intent.putExtra("vURL", "2ebrqaFSVW4");
                          intent.putExtra("text1", "Ippon seoi nage");
-                         intent.putExtra("text2", "One arm shoulder throw");
+                         intent.putExtra("text2", "One armed shoulder throw");
                          startActivity(intent);
                          break;
                      case "Drop seoi nage":
