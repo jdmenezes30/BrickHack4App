@@ -37,9 +37,12 @@ public class WhiteBelt extends ListFragment{
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 Toast.makeText(getActivity().getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
                 String sText = ((TextView) view).getText().toString();
-                Intent intent = null;
-                if(sText.equals("O soto gake"))
-                    intent = new Intent(getActivity().getBaseContext(), osotogake.class);
+                Intent intent = new Intent(getActivity().getBaseContext(), osotogake.class);
+                if(sText.equals("O soto gake")) {
+                    intent.putExtra("vURL", "OM11NEW1f3g");
+                    intent.putExtra("text1", "O soto gake");
+                    intent.putExtra("text2", "Major or large outer reap");
+                }
 
                 /*
                 if(sText.equals("O soto gari"))
