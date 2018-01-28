@@ -31,6 +31,8 @@
         </activity>
         <activity android:name=".BlackBelt" android:label="BackBeltLabel">
         </activity>
+        <activity android:name=".Technique" android:label="TechniqueLabel">
+        </activity>
     </application>
 
 </manifest>

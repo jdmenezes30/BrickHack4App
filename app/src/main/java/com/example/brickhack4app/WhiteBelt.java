@@ -30,38 +30,55 @@ public class WhiteBelt extends ListFragment{
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
-        String[] techniques = {"O soto gake","O soto gari", "Koshi guruma", "O goshi", "Ippon seoi nage", "Drop seoi nage"};
+        String[] techniques = {"O soto gake", "O soto gari", "Koshi guruma", "O goshi", "Ippon seoi nage", "Drop seoi nage"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, techniques);
         getListView().setAdapter(adapter);
-        getListView().setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-                Toast.makeText(getActivity().getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
-                String sText = ((TextView) view).getText().toString();
-                Intent intent = new Intent(getActivity().getBaseContext(), osotogake.class);
-                if(sText.equals("O soto gake")) {
-                    intent.putExtra("vURL", "OM11NEW1f3g");
-                    intent.putExtra("text1", "O soto gake");
-                    intent.putExtra("text2", "Major or large outer reap");
-                }
-
-                /*
-                if(sText.equals("O soto gari"))
-                    intent = new Intent(getBaseContext(), osotogari.class);
-                if(sText.equals("Koshi guruma"))
-                    intent = new Intent(getBaseContext(), koshiguruma.class);
-                if(sText.equals("O goshi"))
-                    intent = new Intent(getBaseContext(), ogoshi.class);
-                if(sText.equals("Ippon seoi nage"))
-                    intent = new Intent(getBaseContext(), ipponseoinage.class);
-                if(sText.equals("Drop seoi nage"))
-                    intent = new Intent(getBaseContext(), dropseoinage.class);
-                    */
-                if(intent != null){
-                    startActivity(intent);
-                }
-
-            }
-        });
+        getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                 Toast.makeText(getActivity().getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
+                 String sText = ((TextView) view).getText().toString();
+                 Intent intent = new Intent(getActivity().getBaseContext(), Technique.class);
+                 switch (sText) {
+                     case "O soto gake":
+                         intent.putExtra("vURL", "OM11NEW1f3g");
+                         intent.putExtra("text1", "O soto gake");
+                         intent.putExtra("text2", "Major or large outer reap");
+                         startActivity(intent);
+                         break;
+                     case "O soto gari":
+                         intent.putExtra("vURL", "Cik-jXhmsoE");
+                         intent.putExtra("text1", "O soto gari");
+                         intent.putExtra("text2", "Major or large outer reap");
+                         startActivity(intent);
+                         break;
+                     case "Koshi guruma":
+                         intent.putExtra("vURL", "pJsQrgMhgk4");
+                         intent.putExtra("text1", "Koshi guruma");
+                         intent.putExtra("text2", "Hip wheel throw");
+                         startActivity(intent);
+                         break;
+                     case "O goshi":
+                         intent.putExtra("vURL", "PFbILGwd5L4");
+                         intent.putExtra("text1", "O goshi");
+                         intent.putExtra("text2", "Major or large hip throw");
+                         startActivity(intent);
+                         break;
+                     case "Ippon seoi nage":
+                         intent.putExtra("vURL", "2ebrqaFSVW4");
+                         intent.putExtra("text1", "Ippon seoi nage");
+                         intent.putExtra("text2", "One arm shoulder throw");
+                         startActivity(intent);
+                         break;
+                     case "Drop seoi nage":
+                         intent.putExtra("vURL", "vRKnFN3mres");
+                         intent.putExtra("text1", "Drop seoi nage");
+                         intent.putExtra("text2", "Kneeling shoulder drop");
+                         startActivity(intent);
+                         break;
+                 }
+             }
+         }
+        );
         super.onActivityCreated(savedInstanceState);
     }
 }

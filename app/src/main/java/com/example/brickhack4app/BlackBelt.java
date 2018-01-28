@@ -35,22 +35,52 @@ public class BlackBelt extends ListFragment{
         String[] techniques = {"Hiza guruma","Ashi guruma", "Yoko guruma", "Uki waza", "Harai tsuri komi ashi", "Yoko otoshi"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, techniques);
         getListView().setAdapter(adapter);
-        getListView().setOnItemClickListener(new AdapterView.OnItemClickListener(){
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id){
-                Toast.makeText(getActivity().getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
-                String sText = ((TextView) view).getText().toString();
-                Intent intent = null;
-
-                //TODO
-
-                if(intent != null){
-                    startActivity(intent);
-                }
-
-            }
-        });
-        Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
-        toolbar.setBackgroundColor(Color.parseColor("#ffffff"));
+        getListView().setOnItemClickListener(new AdapterView.OnItemClickListener() {
+             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                 Toast.makeText(getActivity().getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
+                 String sText = ((TextView) view).getText().toString();
+                 Intent intent = new Intent(getActivity().getBaseContext(), Technique.class);
+                 switch (sText) {
+                     case "Hiza guruma":
+                         intent.putExtra("vURL", "OM11NEW1f3g");
+                         intent.putExtra("text1", "Hiza guruma");
+                         intent.putExtra("text2", "Major or large outer reap");
+                         startActivity(intent);
+                         break;
+                     case "Ashi guruma":
+                         intent.putExtra("vURL", "Cik-jXhmsoE");
+                         intent.putExtra("text1", "Ashi guruma");
+                         intent.putExtra("text2", "Major or large outer reap");
+                         startActivity(intent);
+                         break;
+                     case "Yoko guruma":
+                         intent.putExtra("vURL", "pJsQrgMhgk4");
+                         intent.putExtra("text1", "Yoko guruma");
+                         intent.putExtra("text2", "Hip wheel throw");
+                         startActivity(intent);
+                         break;
+                     case "Uki waza":
+                         intent.putExtra("vURL", "PFbILGwd5L4");
+                         intent.putExtra("text1", "Uki waza");
+                         intent.putExtra("text2", "Major or large hip throw");
+                         startActivity(intent);
+                         break;
+                     case "Harai tsuri komi ashi":
+                         intent.putExtra("vURL", "2ebrqaFSVW4");
+                         intent.putExtra("text1", "Harai tsuri komi ashi");
+                         intent.putExtra("text2", "One arm shoulder throw");
+                         startActivity(intent);
+                         break;
+                     case "Yoko otoshi":
+                         intent.putExtra("vURL", "vRKnFN3mres");
+                         intent.putExtra("text1", "Yoko otoshi");
+                         intent.putExtra("text2", "Kneeling shoulder drop");
+                         startActivity(intent);
+                         break;
+                 }
+             }
+         }
+        );
         super.onActivityCreated(savedInstanceState);
     }
 }
