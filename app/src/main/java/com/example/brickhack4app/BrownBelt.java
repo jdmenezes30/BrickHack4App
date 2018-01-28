@@ -11,7 +11,7 @@ public class BrownBelt extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.brownbelt);
+        setContentView(R.layout.belt);
         String[] techniques = {"Harai makikomi","Kata guruma", "Uki otoshi", "Yoko tomoe nage", "Okuri ashi harai", "Yoko gake", "Sasae tsuri komi ashi"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, techniques);
         getListView().setAdapter(adapter);

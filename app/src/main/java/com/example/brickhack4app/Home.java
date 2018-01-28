@@ -17,7 +17,7 @@ public class Home extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        String[] Subjects = {"Stretches","White Belt", "Yellow Belt", "Orange Belt", "Green Belt", "Blue Belt", "Brown Belt", "Black Belt"};
+        String[] Subjects = {"White Belt", "Yellow Belt", "Orange Belt", "Green Belt", "Blue Belt", "Brown Belt", "Black Belt"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, Subjects);
         getListView().setAdapter(adapter);
         getListView().setOnItemClickListener(new AdapterView.OnItemClickListener(){
@@ -25,8 +25,6 @@ public class Home extends ListActivity {
                 Toast.makeText(getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
                 String sText = ((TextView) view).getText().toString();
                 Intent intent = null;
-                if(sText.equals("Stretches"))
-                    intent = new Intent(getBaseContext(), Stretches.class);
                 if(sText.equals("White Belt"))
                     intent = new Intent(getBaseContext(), WhiteBelt.class);
                 if(sText.equals("Yellow Belt"))

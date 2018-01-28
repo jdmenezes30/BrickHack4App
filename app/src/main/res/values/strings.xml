@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">BrickHack4App</string>
+    <string name="techniqueName">TechniqueName</string>
 </resources>

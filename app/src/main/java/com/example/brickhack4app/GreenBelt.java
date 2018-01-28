@@ -11,7 +11,7 @@ public class GreenBelt extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.greenbelt);
+        setContentView(R.layout.belt);
         String[] techniques = {"Ushiro goshi","Sumi gaeshi", "Sode tsurikomi goshi", "O soto otoshi", "Ko soto gari", "Tomoe nage"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, techniques);
         getListView().setAdapter(adapter);

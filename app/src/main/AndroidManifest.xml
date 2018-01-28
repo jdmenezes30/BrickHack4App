@@ -15,8 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Stretches" android:label="StretchesLabel">
-        </activity>
         <activity android:name=".WhiteBelt" android:label="WhiteBeltLabel">
         </activity>
         <activity android:name=".YellowBelt" android:label="YellowBeltLabel">
@@ -30,6 +28,8 @@
         <activity android:name=".BrownBelt" android:label="BrownBeltLabel">
         </activity>
         <activity android:name=".BlackBelt" android:label="BackBeltLabel">
+        </activity>
+        <activity android:name=".osotogake" android:label="osotogakeLabel">
         </activity>
     </application>
 
