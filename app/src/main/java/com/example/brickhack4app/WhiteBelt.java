@@ -82,7 +82,7 @@ public class WhiteBelt extends ListFragment{
          }
         );
         Toolbar toolbar = (Toolbar) getActivity().findViewById(R.id.toolbar);
-        toolbar.setBackgroundColor(Color.parseColor("#808080"));
+        toolbar.setBackgroundColor(Color.parseColor("#bbbbbb"));
         super.onActivityCreated(savedInstanceState);
     }
 }
