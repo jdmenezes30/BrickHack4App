@@ -5,22 +5,35 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.ListViewCompat;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.support.v7.widget.Toolbar;
 
-public class Home extends ListActivity {
+public class Home extends AppCompatActivity {
+
+    private ListView judoLV;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+
+        Toolbar toolbar = (Toolbar) findViewById(R.id.home_toolbar);
+        setSupportActionBar(toolbar);
+
+        judoLV = (ListView) findViewById(R.id.judoListView);
+
+        Log.i("bleh",judoLV.toString());
+
         String[] Subjects = {"Stretches","White Belt", "Yellow Belt", "Orange Belt", "Green Belt", "Blue Belt", "Brown Belt", "Black Belt"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(getListView().getContext(), android.R.layout.simple_list_item_1, Subjects);
-        getListView().setAdapter(adapter);
-        getListView().setOnItemClickListener(new AdapterView.OnItemClickListener(){
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(judoLV.getContext(), android.R.layout.simple_list_item_1, Subjects);
+        judoLV.setAdapter(adapter);
+        judoLV.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             public void onItemClick(AdapterView<?> parent, View view, int position, long id){
                 Toast.makeText(getApplicationContext(), ((TextView) view).getText(), Toast.LENGTH_SHORT).show();
                 String sText = ((TextView) view).getText().toString();
