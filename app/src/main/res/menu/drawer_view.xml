@@ -2,6 +2,10 @@
 
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_stretches"
+            android:title="Stretches"
+            android:checked="true" />
+        <item
             android:id="@+id/nav_white_belt"
             android:title="White Belt"
             android:checked="true" />

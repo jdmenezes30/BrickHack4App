@@ -33,6 +33,8 @@
         </activity>
         <activity android:name=".Technique" android:label="TechniqueLabel">
         </activity>
+        <activity android:name=".Stretches" android:label="StretchesLabel">
+        </activity>
     </application>
 
 </manifest>

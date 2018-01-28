@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.content.res.Configuration;
+import android.widget.TextView;
 
 /**
  * Created by LSmith on 1/27/2018.
@@ -26,6 +27,9 @@ public class Main extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView textElement = (TextView) findViewById(R.id.appDescription);
+        textElement.setText(getIntent().getStringExtra("Welcome to the Judo App! This app conveniently locates names, descriptions and videos of different techniques needed to be promoted to different Judo ranks."));
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

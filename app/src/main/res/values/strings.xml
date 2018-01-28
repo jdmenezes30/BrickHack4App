@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BrickHack4App</string>
+    <string name="app_name">Judo App</string>
     <string name="techniqueName">TechniqueName</string>
     <string name="techniqueDescription">TechniqueDescription</string>
     <string name="player_error">Error initializing YouTube player: %s</string>
@@ -7,5 +7,5 @@
     <string name="seek_to_hint">Seconds</string>
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
-
+    <string name="appDescription">App Description</string>
 </resources>

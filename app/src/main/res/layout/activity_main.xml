@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
         <include
             layout="@layout/toolbar"
             android:layout_width="match_parent"
@@ -20,6 +19,14 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
+        <TextView
+            android:textSize="32sp"
+            android:id="@+id/appDescription"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="@string/appDescription"
+            android:textColor="#000"/>
     </LinearLayout>
 
     <android.support.design.widget.NavigationView
@@ -31,3 +38,4 @@
         app:menu="@menu/drawer_view"
         app:headerLayout="@layout/nav_header" />
 </android.support.v4.widget.DrawerLayout>
+
